@@ -12,11 +12,11 @@ $urlRouterProvider.otherwise('/');
 $stateProvider
 .state('home', {
   url:'/',
-  templateUrl: '/menuapplication/home.html'
+  templateUrl: '/MenuApplication/home.html'
 })
 .state ('categories',{
   url:'/categories',
-  templateUrl : '/menuapplication/main-categories.html',
+  templateUrl : '/MenuApplication/main-categories.html',
   controller: 'DataController as listData',
   resolve:{
     mainList :['MenuDataService', function(MenuDataService){
